@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | مطبعة الصخرة الحديثة</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .contact-hero {
+      padding: 150px 5% 50px;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://via.placeholder.com/1920x600/1a1a1a/444?text=Contact+Us') no-repeat center/cover;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo"><img src="logo.png" alt="Sakhra Modern Press" style="height: 50px;"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+      <li><a href="services.html" data-i18n="nav_services">خدماتنا</a></li>
+      <li><a href="contact.html" class="active" data-i18n="nav_contact">تواصل معنا</a></li>
+    </ul>
+    <div style="display:flex; gap:15px; align-items:center;">
+      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <header class="contact-hero fade-in-up">
+    <h1 style="font-size: 3.5rem; color: #fff;" data-i18n="contact_title">تواصل معنا</h1>
+  </header>
+
+  <section class="section-padding">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item fade-in-up">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <h3 style="margin-bottom: 5px;">واتساب</h3>
+            <p style="color:var(--text-secondary); direction:ltr;">[WHATSAPP_NUMBER]</p>
+          </div>
+        </div>
+        <div class="contact-item fade-in-up" style="animation-delay: 0.1s">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h3 style="margin-bottom: 5px;">هاتف</h3>
+            <p style="color:var(--text-secondary); direction:ltr;">2745855</p>
+          </div>
+        </div>
+        <div class="contact-item fade-in-up" style="animation-delay: 0.2s">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3 style="margin-bottom: 5px;">المكان</h3>
+            <p style="color:var(--text-secondary);" data-i18n="contact_address">الموقع: [عنوان المطبعة]</p>
+          </div>
+        </div>
+        <div class="contact-item fade-in-up" style="animation-delay: 0.3s">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h3 style="margin-bottom: 5px;">أوقات العمل</h3>
+            <p style="color:var(--text-secondary);" data-i18n="contact_hours">ساعات العمل: السبت - الخميس / 8 صباحاً - 6 مساءً</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-map fade-in-up" style="animation-delay: 0.4s">
+        <!-- Placeholder for Google Maps iframe -->
+        <div style="width: 100%; height: 400px; background: var(--bg-card); display:flex; align-items:center; justify-content:center; border: 1px solid var(--border); border-radius: 8px;">
+          <h3 style="color: var(--text-secondary);">[Google Maps Iframe Placeholder]</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Social Media -->
+  <section class="cta-banner fade-in-up" style="margin-top: 40px; background-color: var(--bg-card); border-top: 1px solid var(--border);">
+    <h2 style="color:var(--text-primary);">تابعنا على المنصات الرقمية</h2>
+    <div class="social-icons" style="margin-top: 20px;">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="logo.png" alt="Sakhra Modern Press" style="height: 60px; margin-bottom: 5px;">
+    <p data-i18n="footer_desc" style="color: var(--text-secondary);">36 عاماً في خدمة السوق | Since 1989</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="copyright" data-i18n="footer_copy">© 2025 مطبعة الصخرة الحديثة. جميع الحقوق محفوظة.</div>
+  </footer>
+
+  <a href="https://wa.me/[WHATSAPP_NUMBER]" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

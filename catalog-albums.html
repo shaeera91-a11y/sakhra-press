@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ألبومات الصور | مطبعة الصخرة الحديثة</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .catalog-hero {
+      padding: 150px 5% 50px;
+      background: var(--bg-secondary);
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .breadcrumb {
+      color: var(--text-secondary);
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+    .breadcrumb a {
+      color: var(--accent);
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><img src="logo.png" alt="Sakhra Modern Press" style="height: 50px;"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+      <li><a href="services.html" class="active" data-i18n="nav_services">خدماتنا</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+    </ul>
+    <div style="display:flex; gap:15px; align-items:center;">
+      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <header class="catalog-hero fade-in-up">
+    <h1 style="font-size: 3rem; color: #fff;" data-i18n="srv_6">ألبومات الصور</h1>
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="nav_home">الرئيسية</a> > <a href="services.html" data-i18n="nav_services">خدماتنا</a> > <span data-i18n="srv_6">ألبومات الصور</span>
+    </div>
+  </header>
+
+  <section class="section-padding" style="padding-bottom: 20px;">
+    <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+      <div class="card fade-in-up" style="padding: 15px;"><h4>ألبومات أعراس</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.1s;"><h4>ألبومات تخرج</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.2s;"><h4>ألبومات عائلية</h4></div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Wedding+Album" alt="Album"></div>
+      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Graduation+Album" alt="Album"></div>
+      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Family+Album" alt="Album"></div>
+      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Leather+Cover" alt="Album"></div>
+    </div>
+  </section>
+
+  <section class="cta-banner fade-in-up" style="margin-top: 40px;">
+    <h2 data-i18n="catalog_interest">مهتم بهذه الخدمة؟</h2>
+    <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="nav_contact" style="background-color: var(--bg-primary); color: var(--text-primary);">تواصل معنا</a>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img src="" alt="View" id="lightbox-img">
+  </div>
+
+  <footer>
+    <img src="logo.png" alt="Sakhra Modern Press" style="height: 60px; margin-bottom: 5px;">
+    <p data-i18n="footer_desc" style="color: var(--text-secondary);">36 عاماً في خدمة السوق | Since 1989</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="copyright" data-i18n="footer_copy">© 2025 مطبعة الصخرة الحديثة. جميع الحقوق محفوظة.</div>
+  </footer>
+
+  <a href="https://wa.me/[WHATSAPP_NUMBER]" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

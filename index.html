@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="مطبعة الصخرة الحديثة - 36 عاماً في خدمة السوق. نطبع كل شيء بجودة عالية وسرعة في التنفيذ.">
+  <title>مطبعة الصخرة الحديثة | Sakhra Modern Press</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo"><img src="logo.png" alt="Sakhra Modern Press" style="height: 50px;"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active" data-i18n="nav_home">الرئيسية</a></li>
+      <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+      <li><a href="services.html" data-i18n="nav_services">خدماتنا</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+    </ul>
+    <div style="display:flex; gap:15px; align-items:center;">
+      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content fade-in-up">
+      <img src="logo.png" alt="Sakhra Modern Press" class="hero-logo fade-in-up">
+      <h1 data-i18n="hero_title">نطبع كل شيء… ما عدا الجنيه الفلسطيني</h1>
+      <p data-i18n="hero_sub">36 عاماً نطبع ثقتك في السوق</p>
+      <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="hero_cta">تواصل معنا الآن</a>
+    </div>
+  </header>
+
+  <!-- Counters Section -->
+  <section class="counters">
+    <div class="counter-box fade-in-up">
+      <span class="counter-num" data-target="36" data-plus="true">0</span>
+      <span class="counter-text" data-i18n="years_exp">سنة خبرة</span>
+    </div>
+    <div class="counter-box fade-in-up" style="animation-delay: 0.1s">
+      <span class="counter-num" data-target="10000" data-plus="true">0</span>
+      <span class="counter-text" data-i18n="projects_done">مشروع منجز</span>
+    </div>
+    <div class="counter-box fade-in-up" style="animation-delay: 0.2s">
+      <span class="counter-num" data-target="500" data-plus="true">0</span>
+      <span class="counter-text" data-i18n="clients_reg">عميل دائم</span>
+    </div>
+    <div class="counter-box fade-in-up" style="animation-delay: 0.3s">
+      <span class="counter-num" data-target="12" data-plus="true">0</span>
+      <span class="counter-text" data-i18n="services_avail">خدمة متنوعة</span>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="section-padding">
+    <h2 class="section-title fade-in-up" data-i18n="srv_title">خدماتنا</h2>
+    <div class="grid-cards">
+      <div class="card fade-in-up">
+        <img src="service1.png" alt="اللافتات والإعلانات" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_1">اللافتات والإعلانات</h3>
+        <a href="catalog-banners.html" class="btn-primary" data-i18n="srv_btn"
+          style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
+      </div>
+      <div class="card fade-in-up" style="animation-delay: 0.1s">
+        <img src="service2.png" alt="الطباعة الرقمية" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_2">الطباعة الرقمية</h3>
+        <a href="catalog-digital.html" class="btn-primary" data-i18n="srv_btn"
+          style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
+      </div>
+      <div class="card fade-in-up" style="animation-delay: 0.2s">
+        <img src="service3.png" alt="كروت العرس" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_3">كروت العرس</h3>
+        <a href="catalog-wedding.html" class="btn-primary" data-i18n="srv_btn"
+          style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
+      </div>
+      <div class="card fade-in-up" style="animation-delay: 0.3s">
+        <img src="service4.png" alt="الطباعة على المواد" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_4">الطباعة على المواد</h3>
+        <a href="catalog-materials.html" class="btn-primary" data-i18n="srv_btn"
+          style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
+      </div>
+      <div class="card fade-in-up" style="animation-delay: 0.4s">
+        <img src="service5.png" alt="الهدايا والتكريم" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_5">الهدايا والتكريم</h3>
+        <a href="catalog-gifts.html" class="btn-primary" data-i18n="srv_btn"
+          style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
+      </div>
+      <div class="card fade-in-up" style="animation-delay: 0.5s">
+        <img src="service6.png" alt="ألبومات الصور" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_6">ألبومات الصور</h3>
+        <a href="catalog-albums.html" class="btn-primary" data-i18n="srv_btn"
+          style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
+      </div>
+      <div class="card fade-in-up" style="animation-delay: 0.6s">
+        <img src="service7.png" alt="القص والحفر CNC" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_7">القص والحفر CNC</h3>
+        <a href="catalog-cnc.html" class="btn-primary" data-i18n="srv_btn"
+          style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
+      </div>
+      <div class="card fade-in-up" style="animation-delay: 0.7s">
+        <img src="service8.png" alt="الأختام" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_8">الأختام</h3>
+        <a href="catalog-stamps.html" class="btn-primary" data-i18n="srv_btn"
+          style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section class="section-padding why-us">
+    <h2 class="section-title fade-in-up">
+      <span data-i18n="why_title">لماذا</span> <span style="color:var(--text-primary);"
+        data-i18n="why_title_span">نحن؟</span>
+    </h2>
+    <div class="features-list">
+      <div class="feature-item fade-in-up"><i class="fas fa-check-circle"></i> <span data-i18n="feat_1">36 سنة
+          خبرة</span></div>
+      <div class="feature-item fade-in-up" style="animation-delay: 0.1s"><i class="fas fa-check-circle"></i> <span
+          data-i18n="feat_2">تقنيات حديثة</span></div>
+      <div class="feature-item fade-in-up" style="animation-delay: 0.2s"><i class="fas fa-check-circle"></i> <span
+          data-i18n="feat_3">سرعة التنفيذ</span></div>
+      <div class="feature-item fade-in-up" style="animation-delay: 0.3s"><i class="fas fa-check-circle"></i> <span
+          data-i18n="feat_4">جودة مضمونة</span></div>
+      <div class="feature-item fade-in-up" style="animation-delay: 0.4s"><i class="fas fa-check-circle"></i> <span
+          data-i18n="feat_5">كميات كبيرة</span></div>
+      <div class="feature-item fade-in-up" style="animation-delay: 0.5s"><i class="fas fa-check-circle"></i> <span
+          data-i18n="feat_6">خدمة متكاملة</span></div>
+      <div class="feature-item fade-in-up" style="animation-delay: 0.6s"><i class="fas fa-check-circle"></i> <span
+          data-i18n="feat_7">+12 خدمة متنوعة</span></div>
+      <div class="feature-item fade-in-up" style="animation-delay: 0.7s"><i class="fas fa-check-circle"></i> <span
+          data-i18n="feat_8">أسعار منافسة</span></div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner fade-in-up">
+    <h2 data-i18n="banner_cta_title">كل حملتك من مكان واحد</h2>
+    <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="banner_cta_btn">ابدأ الآن</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="logo.png" alt="Sakhra Modern Press" style="height: 60px; margin-bottom: 5px;">
+    <p data-i18n="footer_desc" style="color: var(--text-secondary);">36 عاماً في خدمة السوق | Since 1989</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="copyright" data-i18n="footer_copy">© 2025 مطبعة الصخرة الحديثة. جميع الحقوق محفوظة.</div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/[WHATSAPP_NUMBER]" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
