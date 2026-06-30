@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الهدايا والتكريم | مطبعة الصخرة الحديثة</title>
+  <title>دروع شكر وتقدير | مطبعة الصخرة الحديثة</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .catalog-hero {
-      padding: 150px 5% 50px;
-      background: var(--bg-secondary);
+      padding: 150px 5% 70px;
+      background: linear-gradient(rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 0.75)), url('service5.jpg') no-repeat center center;
+      background-size: cover;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
@@ -26,6 +27,7 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar">
     <a href="index.html" class="logo"><img src="logo.png" alt="Sakhra Modern Press" style="height: 50px;"></a>
     <ul class="nav-links" id="navLinks">
@@ -35,46 +37,165 @@
       <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
     </ul>
     <div style="display:flex; gap:15px; align-items:center;">
-      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="lang-toggle" id="langToggle">HE</button>
       <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
 
+  <!-- Hero Catalog -->
   <header class="catalog-hero fade-in-up">
-    <h1 style="font-size: 3rem; color: #fff;" data-i18n="srv_5">الهدايا والتكريم</h1>
+    <h1 style="font-size: 3rem; color: #fff;" data-i18n="srv_5">دروع شكر وتقدير</h1>
     <div class="breadcrumb">
-      <a href="index.html" data-i18n="nav_home">الرئيسية</a> > <a href="services.html" data-i18n="nav_services">خدماتنا</a> > <span data-i18n="srv_5">الهدايا والتكريم</span>
+      <a href="index.html" data-i18n="nav_home">الرئيسية</a> > <a href="services.html" data-i18n="nav_services">خدماتنا</a> > <span data-i18n="srv_5">دروع شكر وتقدير</span>
     </div>
   </header>
 
+  <!-- Types of Services Cards -->
   <section class="section-padding" style="padding-bottom: 20px;">
     <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-      <div class="card fade-in-up" style="padding: 15px;"><h4>دروع شكر وتقدير</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.1s;"><h4>ميداليات</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.2s;"><h4>براويز</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.3s;"><h4>هدايا مناسبات خاصة</h4></div>
+      <div class="card fade-in-up" style="padding: 15px;"><h4>دروع التكريم الفاخرة</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.1s;"><h4>الميداليات والكؤوس</h4></div>
     </div>
   </section>
 
-  <section class="section-padding">
+  <!-- Filter Tabs -->
+  <div class="filter-container fade-in-up">
+    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+    <button class="filter-btn" data-filter="awards" data-i18n="filter_awards">دروع شكر وتقدير</button>
+    <button class="filter-btn" data-filter="medals" data-i18n="filter_medals">ميداليات</button>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="section-padding" style="padding-top: 10px;">
     <div class="gallery-grid">
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Award+Plaque" alt="Gifts"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Medals" alt="Gifts"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Frames" alt="Gifts"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Special+Gifts" alt="Gifts"></div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(1).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(10).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(11).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(12).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(13).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(14).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(15).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(16).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(17).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(18).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(19).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(2).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(20).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(21).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(22).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(23).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(24).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(25).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(26).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(27).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(3).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(4).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(5).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(6).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(7).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(8).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="awards">
+        <img src="CATALOG/Gifts/awards/awards%20(9).jpeg" alt="دروع تكريم">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="medals">
+        <img src="CATALOG/Gifts/medals/medals.png" alt="ميداليات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="cta-banner fade-in-up" style="margin-top: 40px;">
     <h2 data-i18n="catalog_interest">مهتم بهذه الخدمة؟</h2>
     <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="nav_contact" style="background-color: var(--bg-primary); color: var(--text-primary);">تواصل معنا</a>
   </section>
 
+  <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightbox-close">&times;</span>
     <img src="" alt="View" id="lightbox-img">
   </div>
 
+  <!-- Footer -->
   <footer>
     <img src="logo.png" alt="Sakhra Modern Press" style="height: 60px; margin-bottom: 5px;">
     <p data-i18n="footer_desc" style="color: var(--text-secondary);">36 عاماً في خدمة السوق | Since 1989</p>
@@ -94,4 +215,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-

@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .catalog-hero {
-      padding: 150px 5% 50px;
-      background: var(--bg-secondary);
+      padding: 150px 5% 70px;
+      background: linear-gradient(rgba(12, 12, 12, 0.72), rgba(12, 12, 12, 0.72)), url('service2.jpeg') no-repeat center center;
+      background-size: cover;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
@@ -36,7 +37,7 @@
       <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
     </ul>
     <div style="display:flex; gap:15px; align-items:center;">
-      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="lang-toggle" id="langToggle">HE</button>
       <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
@@ -53,21 +54,70 @@
   <section class="section-padding" style="padding-bottom: 20px;">
     <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
       <div class="card fade-in-up" style="padding: 15px;"><h4>كروت عمل (Business Cards)</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.1s;"><h4>فلايرات (Flyers)</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.2s;"><h4>بروشورات (Brochures)</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.3s;"><h4>طباعة أوراق بجميع الأنواع</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.1s;"><h4>كروت UV (UV Cards)</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.2s;"><h4>فلايرات (Flyers)</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.3s;"><h4>بروشورات (Brochures)</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.4s;"><h4>طباعة أوراق بجميع الأنواع</h4></div>
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="section-padding">
+  <!-- Filter Tabs -->
+  <div class="filter-container fade-in-up">
+    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+    <button class="filter-btn" data-filter="business" data-i18n="filter_business">كروت عمل</button>
+    <button class="filter-btn" data-filter="uv" data-i18n="filter_uv">كروت UV</button>
+    <button class="filter-btn" data-filter="flyers" data-i18n="filter_flyers">فلايرات</button>
+    <button class="filter-btn" data-filter="brochures" data-i18n="filter_brochures">بروشورات</button>
+    <button class="filter-btn" data-filter="paper" data-i18n="filter_paper">طباعة أوراق</button>
+  </div>
+
+    <!-- Gallery Section -->
+  <section class="section-padding" style="padding-top: 10px;">
     <div class="gallery-grid">
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Business+Cards" alt="Digital Print"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Flyers" alt="Digital Print"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Brochures" alt="Digital Print"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=A4+Paper" alt="Digital Print"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Letterhead" alt="Digital Print"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Envelopes" alt="Digital Print"></div>
+      <div class="gallery-item fade-in-up" data-category="brochures">
+        <img src="CATALOG/Digital%20printing/Brochures/Brochures%201.jpg" alt="بروشورات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="brochures">
+        <img src="CATALOG/Digital%20printing/Brochures/Brochures%202.jpg" alt="بروشورات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="business">
+        <img src="CATALOG/Digital%20printing/Business%20Cards/Business%20Cards2.jpg" alt="كروت عمل">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="business">
+        <img src="CATALOG/Digital%20printing/Business%20Cards/Business%20Cards3.png" alt="كروت عمل">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="business">
+        <img src="CATALOG/Digital%20printing/Business%20Cards/Business%20Cards4.jpg" alt="كروت عمل">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="business">
+        <img src="CATALOG/Digital%20printing/Business%20Cards/Business%20Cards5.jpg" alt="كروت عمل">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="flyers">
+        <img src="CATALOG/Digital%20printing/Flyers/fliar.png" alt="فلايرات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="paper">
+        <img src="CATALOG/Digital%20printing/Paper/Paper1.jpg" alt="طباعة أوراق">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="uv">
+        <img src="CATALOG/Digital%20printing/UV%20Cards/UV%20Cards1.png" alt="كروت UV">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="uv">
+        <img src="CATALOG/Digital%20printing/UV%20Cards/UV%20Cards2.png" alt="كروت UV">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="uv">
+        <img src="CATALOG/Digital%20printing/UV%20Cards/UV%20Cards3.png" alt="كروت UV">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
     </div>
   </section>
 
@@ -103,4 +153,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-

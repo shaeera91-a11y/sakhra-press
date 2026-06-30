@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الطباعة على المواد | مطبعة الصخرة الحديثة</title>
+  <title>طباعة التيشرتات والأكواب | مطبعة الصخرة الحديثة</title>
+  <meta name="description" content="كتالوج طباعة التيشرتات والأكواب والطواقي والفساتين — مطبعة الصخرة الحديثة">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .catalog-hero {
-      padding: 150px 5% 50px;
-      background: var(--bg-secondary);
+      padding: 150px 5% 70px;
+      background: linear-gradient(rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 0.75)), url('service4.png') no-repeat center center;
+      background-size: cover;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
@@ -22,6 +24,8 @@
       color: var(--accent);
       margin: 0 5px;
     }
+
+
   </style>
 </head>
 <body>
@@ -35,41 +39,170 @@
       <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
     </ul>
     <div style="display:flex; gap:15px; align-items:center;">
-      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="lang-toggle" id="langToggle">HE</button>
       <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
 
   <header class="catalog-hero fade-in-up">
-    <h1 style="font-size: 3rem; color: #fff;" data-i18n="srv_4">الطباعة على المواد</h1>
+    <h1 style="font-size: 3rem; color: #fff;" data-i18n="srv_4">طباعة التيشرتات والأكواب</h1>
     <div class="breadcrumb">
-      <a href="index.html" data-i18n="nav_home">الرئيسية</a> > <a href="services.html" data-i18n="nav_services">خدماتنا</a> > <span data-i18n="srv_4">الطباعة على المواد</span>
+      <a href="index.html" data-i18n="nav_home">الرئيسية</a> &gt;
+      <a href="services.html" data-i18n="nav_services">خدماتنا</a> &gt;
+      <span data-i18n="srv_4">طباعة التيشرتات والأكواب</span>
     </div>
   </header>
 
-  <section class="section-padding" style="padding-bottom: 20px;">
-    <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-      <div class="card fade-in-up" style="padding: 15px;"><h4>طباعة كاسات (Mugs)</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.1s;"><h4>طباعة بلايز (T-Shirts)</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.2s;"><h4>طباعة طواقي (Caps)</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.3s;"><h4>طباعة فيستات (Vests)</h4></div>
-    </div>
-  </section>
+  <!-- Filter Buttons -->
+  <div class="filter-container fade-in-up">
+    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+    <button class="filter-btn" data-filter="mugs"    data-i18n="filter_mugs">طباعة أكواب</button>
+    <button class="filter-btn" data-filter="tshirts" data-i18n="filter_tshirts">طباعة تيشرتات</button>
+    <button class="filter-btn" data-filter="caps"    data-i18n="filter_caps">طباعة الطواقي</button>
+    <button class="filter-btn" data-filter="vests"   data-i18n="filter_vests">فيزتات (جيليهات)</button>
+  </div>
 
-  <section class="section-padding">
+  <!-- Gallery -->
+  <section class="section-padding" style="padding-top: 10px;">
     <div class="gallery-grid">
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Mug+Printing" alt="Print"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=T-Shirt" alt="Print"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Caps" alt="Print"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Vests" alt="Print"></div>
+
+    <!-- ===== MUGS ===== -->
+    <div class="gallery-item fade-in-up" data-category="mugs">
+      <img src="CATALOG/Tshirts%20and%20Cups/mugs/mugs%20(1).jpeg" alt="كوب مطبوع">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="mugs">
+      <img src="CATALOG/Tshirts%20and%20Cups/mugs/mugs%20(1).jpg" alt="كوب مطبوع">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="mugs">
+      <img src="CATALOG/Tshirts%20and%20Cups/mugs/mugs%20(2).jpg" alt="كوب مطبوع">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+
+    <!-- ===== T-SHIRTS ===== -->
+        <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(1).jfif" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(1).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(1).jpg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(10).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(11).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(12).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(13).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(14).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(15).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(16).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(17).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(2).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(2).jpg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(3).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(4).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(5).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(6).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(7).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(8).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="tshirts">
+      <img src="CATALOG/Tshirts%20and%20Cups/Tshirts/Tshirts1%20(9).jpeg" alt="طباعة تيشرتات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+
+
+    <!-- ===== CAPS ===== -->
+    <div class="gallery-item fade-in-up" data-category="caps">
+      <img src="CATALOG/Tshirts%20and%20Cups/caps/caps1.jpg" alt="طاقية مطبوعة">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="caps">
+      <img src="CATALOG/Tshirts%20and%20Cups/caps/caps2.webp" alt="طاقية مطبوعة">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+
+    <!-- ===== VESTS ===== -->
+        <div class="gallery-item fade-in-up" data-category="vests">
+      <img src="CATALOG/Tshirts%20and%20Cups/vests/vests1.jpeg" alt="فيزتات جيليهات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="vests">
+      <img src="CATALOG/Tshirts%20and%20Cups/vests/vests2.jpeg" alt="فيزتات جيليهات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+    <div class="gallery-item fade-in-up" data-category="vests">
+      <img src="CATALOG/Tshirts%20and%20Cups/vests/vests3.png" alt="فيزتات جيليهات">
+      <div class="gallery-icon"><i class="fas fa-search"></i></div>
+    </div>
+
+
+    <div class="empty-note" id="emptyNote" style="display:flex; flex-direction:column; align-items:center;">
+      <i class="fas fa-images"></i>
+      لم تُضف صور بعد — ضع صورك في مجلد <strong>CATALOG/Tshirts and Cups/</strong> ثم أضفها في الكود كما هو موضح في التعليقات
+    </div>
+
     </div>
   </section>
 
-  <section class="cta-banner fade-in-up" style="margin-top: 40px;">
+  <!-- CTA -->
+  <section class="cta-banner fade-in-up" style="margin-top: 0;">
     <h2 data-i18n="catalog_interest">مهتم بهذه الخدمة؟</h2>
     <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="nav_contact" style="background-color: var(--bg-primary); color: var(--text-primary);">تواصل معنا</a>
   </section>
 
+  <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightbox-close">&times;</span>
     <img src="" alt="View" id="lightbox-img">
@@ -92,6 +225,6 @@
   </a>
 
   <script src="script.js"></script>
+
 </body>
 </html>
-

@@ -24,7 +24,7 @@
       <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
     </ul>
     <div style="display:flex; gap:15px; align-items:center;">
-      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="lang-toggle" id="langToggle">HE</button>
       <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
@@ -32,26 +32,144 @@
   <!-- Hero Section -->
   <header class="hero">
     <div class="hero-content fade-in-up">
-      <img src="logo.png" alt="Sakhra Modern Press" class="hero-logo fade-in-up">
-      <h1 data-i18n="hero_title">نطبع كل شيء… ما عدا الجنيه الفلسطيني</h1>
-      <p data-i18n="hero_sub">36 عاماً نطبع ثقتك في السوق</p>
-      <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="hero_cta">تواصل معنا الآن</a>
+      <img src="logo.png" alt="Sakhra Modern Press" class="hero-logo fade-in-up" style="position: relative; z-index: 5;">
+      <h1 data-i18n="hero_title" style="position: relative; z-index: 5; font-weight: 900; line-height: 1.4; text-shadow: 0 4px 20px rgba(0,0,0,0.8);">
+        <span style="color: #ffffff; font-size: 1.1em; letter-spacing: 1px;">نطبع كل شيء…</span><br>
+        <span style="font-size: 0.9em; background: linear-gradient(135deg, #F2D080 0%, #C9A84C 50%, #9A7A2E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 15px rgba(201,168,76,0.6));">ما عدا الجنيه الفلسطيني</span>
+      </h1>
+      <p data-i18n="hero_sub" style="position: relative; z-index: 5; margin-top: 15px;">36 عاماً نطبع ثقتك في السوق</p>
+      <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="hero_cta" style="position: relative; z-index: 5;">تواصل معنا الآن</a>
+
+      <!-- Animated Printing Machine -->
+      <div class="hero-machine-wrapper fade-in-up" style="animation-delay: 0.4s; margin-top: 40px; display: flex; justify-content: center; position: relative; z-index: 2;">
+        <svg width="260" height="220" viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
+          <style>
+            .paper-anim {
+              animation: printPaper 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+              transform-origin: 130px 105px;
+            }
+            @keyframes printPaper {
+              /* مخفي داخل الماكينة */
+              0% { transform: perspective(800px) translateY(-10px) scale(0.35) rotateX(15deg); opacity: 0; }
+              /* ينزلق من فتحة الماكينة */
+              8% { transform: perspective(800px) translateY(10px) scale(0.45) rotateX(10deg); opacity: 1; }
+              /* خرج بالكامل، يستقر تحت الماكينة */
+              18% { transform: perspective(800px) translateY(70px) scale(0.5) rotateX(0deg); opacity: 1; }
+              /* وقفة قصيرة */
+              24% { transform: perspective(800px) translateY(70px) scale(0.5) rotateX(0deg); opacity: 1; }
+              /* يطير للأعلى باتجاه العنوان مع ميلان خفيف */
+              38% { transform: perspective(800px) translateY(-280px) translateX(0px) scale(0.7) rotateX(12deg) rotateZ(-3deg); opacity: 1; }
+              /* يصل بجانب العنوان ويكبر ويعرض نفسه بفخر */
+              48% { transform: perspective(800px) translateY(-320px) translateX(0px) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); opacity: 1; }
+              /* يبقى معروض بجانب العنوان لحظة */
+              58% { transform: perspective(800px) translateY(-320px) translateX(0px) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg); opacity: 1; }
+              /* يبدأ بالعودة للأسفل مع ميلان */
+              70% { transform: perspective(800px) translateY(-150px) translateX(0px) scale(0.7) rotateX(15deg) rotateZ(3deg); opacity: 1; }
+              /* ينزلق راجع نحو الماكينة */
+              82% { transform: perspective(800px) translateY(10px) scale(0.45) rotateX(8deg) rotateZ(0deg); opacity: 1; }
+              /* يختفي داخل الماكينة */
+              92% { transform: perspective(800px) translateY(-10px) scale(0.35) rotateX(15deg); opacity: 0; }
+              100% { transform: perspective(800px) translateY(-10px) scale(0.35) rotateX(15deg); opacity: 0; }
+            }
+            .screen-text { animation: blink 1s step-end infinite; }
+            @keyframes blink { 50% { opacity: 0; } }
+            .light-blink { animation: blinkLight 2s infinite alternate; }
+            @keyframes blinkLight {
+              0%, 100% { fill: #C9A84C; filter: drop-shadow(0 0 5px #C9A84C); }
+              50% { fill: #9A7A2E; filter: none; }
+            }
+            .sparkle { filter: drop-shadow(0 0 5px #C9A84C); }
+            .s1 { animation: sparkleDance 2s 0.1s ease-in-out infinite alternate; }
+            .s2 { animation: sparkleDance 2s 0.5s ease-in-out infinite alternate; }
+            .s3 { animation: sparkleDance 2s 0.9s ease-in-out infinite alternate; }
+            .s4 { animation: sparkleDance 2s 1.3s ease-in-out infinite alternate; }
+            .s5 { animation: sparkleDance 2s 1.7s ease-in-out infinite alternate; }
+            @keyframes sparkleDance {
+              0% { transform: scale(0.5); opacity: 0.2; }
+              50% { transform: scale(1.4); opacity: 1; fill: #FFF; }
+              100% { transform: scale(0.7); opacity: 0.5; fill: #C9A84C; }
+            }
+            @keyframes portalPulse {
+              0% { filter: drop-shadow(0 0 4px #C9A84C); }
+              100% { filter: drop-shadow(0 0 14px #F2D080); }
+            }
+            .pound-img {
+              filter: drop-shadow(0 0 12px rgba(201, 168, 76, 0.8));
+              will-change: transform, opacity;
+            }
+          </style>
+
+          <!-- Output Tray -->
+          <path d="M 60 120 L 200 120 L 230 200 L 30 200 Z" fill="#111" stroke="#1E1E1E" stroke-width="2" />
+          <path d="M 70 130 L 190 130 L 210 190 L 50 190 Z" fill="#0A0A0A" />
+
+          <!-- Output Slot & Glowing Portal -->
+          <rect x="65" y="110" width="130" height="20" fill="#000" />
+          <line x1="65" y1="110" x2="195" y2="110" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" style="animation: portalPulse 2.5s infinite alternate;" />
+
+          <!-- Paper (Palestinian Pound Banknote) with sparkles -->
+          <g class="paper-anim">
+            <image href="palestine_pound.png" x="30" y="45" width="200" height="120" preserveAspectRatio="xMidYMid meet" class="pound-img" />
+            <rect x="30" y="45" width="200" height="120" rx="3" fill="none" stroke="#C9A84C" stroke-width="1" style="filter: drop-shadow(0 0 6px #C9A84C);" />
+            <!-- Golden sparkles -->
+            <circle cx="20" cy="40" r="3" fill="#F2D080" class="sparkle s1" />
+            <circle cx="240" cy="40" r="2.5" fill="#C9A84C" class="sparkle s2" />
+            <circle cx="130" cy="30" r="2" fill="#FFFFFF" class="sparkle s3" />
+            <circle cx="15" cy="150" r="3.5" fill="#F2D080" class="sparkle s4" />
+            <circle cx="245" cy="150" r="2.5" fill="#C9A84C" class="sparkle s5" />
+          </g>
+
+          <!-- Machine Front Body -->
+          <rect x="30" y="20" width="200" height="100" rx="15" fill="#1a1a1a" stroke="#1E1E1E" stroke-width="3" />
+          <path d="M 30 35 L 230 35" stroke="#222" stroke-width="2" />
+
+          <!-- Top Feeding Paper Stack -->
+          <rect x="75" y="5" width="110" height="15" rx="2" fill="#eee" opacity="0.9" />
+          <path d="M 75 10 L 185 10" stroke="#ccc" stroke-width="1" />
+          <path d="M 75 15 L 185 15" stroke="#ccc" stroke-width="1" />
+          <rect x="70" y="15" width="120" height="10" rx="2" fill="#050505" />
+
+          <!-- Digital Screen -->
+          <rect x="50" y="55" width="65" height="26" rx="4" fill="#050505" stroke="#C9A84C" stroke-width="1" />
+          <text x="82.5" y="72" fill="#25D366" font-family="monospace" font-size="11" text-anchor="middle" class="screen-text">PRINTING</text>
+
+          <!-- Controls -->
+          <circle cx="150" cy="68" r="6" class="light-blink" />
+          <circle cx="170" cy="68" r="6" fill="#444" />
+          <circle cx="190" cy="68" r="6" fill="#444" />
+          <rect x="144" y="85" width="52" height="6" rx="3" fill="#222" />
+
+          <!-- Machine Branding -->
+          <text x="130" y="48" fill="#555" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">SAKHRA PRESS</text>
+        </svg>
+      </div>
+
     </div>
   </header>
 
   <!-- Counters Section -->
+  <style>
+    @keyframes textPulse {
+      0% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(201,168,76,0.2)); }
+      100% { transform: scale(1.08); filter: drop-shadow(0 0 12px rgba(201,168,76,0.8)); text-shadow: 0 0 8px #F2D080; }
+    }
+    .limitless-text {
+      animation: textPulse 1.2s ease-in-out infinite alternate;
+      display: inline-block;
+    }
+  </style>
   <section class="counters">
     <div class="counter-box fade-in-up">
       <span class="counter-num" data-target="36" data-plus="true">0</span>
       <span class="counter-text" data-i18n="years_exp">سنة خبرة</span>
     </div>
     <div class="counter-box fade-in-up" style="animation-delay: 0.1s">
-      <span class="counter-num" data-target="10000" data-plus="true">0</span>
+      <span class="counter-num" data-target="100000" data-plus="true">0</span>
       <span class="counter-text" data-i18n="projects_done">مشروع منجز</span>
     </div>
     <div class="counter-box fade-in-up" style="animation-delay: 0.2s">
-      <span class="counter-num" data-target="500" data-plus="true">0</span>
-      <span class="counter-text" data-i18n="clients_reg">عميل دائم</span>
+      <span class="counter-num-text limitless-text" data-i18n="clients_limitless" style="font-size: 2.2rem; font-weight: 900; color: var(--gold-primary); display: block; margin-bottom: 5px;">لا حدود</span>
+      <span class="counter-text" data-i18n="clients_reg">لعملائنا الدائمين</span>
     </div>
     <div class="counter-box fade-in-up" style="animation-delay: 0.3s">
       <span class="counter-num" data-target="12" data-plus="true">0</span>
@@ -64,49 +182,49 @@
     <h2 class="section-title fade-in-up" data-i18n="srv_title">خدماتنا</h2>
     <div class="grid-cards">
       <div class="card fade-in-up">
-        <img src="service1.png" alt="اللافتات والإعلانات" class="card-icon-img">
+        <img src="service1.webp" alt="اللافتات والإعلانات" class="card-icon-img">
         <h3 class="card-title" data-i18n="srv_1">اللافتات والإعلانات</h3>
         <a href="catalog-banners.html" class="btn-primary" data-i18n="srv_btn"
           style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
       </div>
       <div class="card fade-in-up" style="animation-delay: 0.1s">
-        <img src="service2.png" alt="الطباعة الرقمية" class="card-icon-img">
+        <img src="service2.jpeg" alt="الطباعة الرقمية" class="card-icon-img">
         <h3 class="card-title" data-i18n="srv_2">الطباعة الرقمية</h3>
         <a href="catalog-digital.html" class="btn-primary" data-i18n="srv_btn"
           style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
       </div>
       <div class="card fade-in-up" style="animation-delay: 0.2s">
-        <img src="service3.png" alt="كروت العرس" class="card-icon-img">
-        <h3 class="card-title" data-i18n="srv_3">كروت العرس</h3>
+        <img src="service_wedding.png" alt="مستلزمات الأعراس والمناسبات" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_3">مستلزمات الأعراس والمناسبات</h3>
         <a href="catalog-wedding.html" class="btn-primary" data-i18n="srv_btn"
           style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
       </div>
       <div class="card fade-in-up" style="animation-delay: 0.3s">
-        <img src="service4.png" alt="الطباعة على المواد" class="card-icon-img">
-        <h3 class="card-title" data-i18n="srv_4">الطباعة على المواد</h3>
-        <a href="catalog-materials.html" class="btn-primary" data-i18n="srv_btn"
+        <img src="service3.jpg" alt="كروت دعوة الأعراس" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_inv">كروت دعوة الأعراس</h3>
+        <a href="catalog-invitations.html" class="btn-primary" data-i18n="srv_btn"
           style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
       </div>
       <div class="card fade-in-up" style="animation-delay: 0.4s">
-        <img src="service5.png" alt="الهدايا والتكريم" class="card-icon-img">
-        <h3 class="card-title" data-i18n="srv_5">الهدايا والتكريم</h3>
-        <a href="catalog-gifts.html" class="btn-primary" data-i18n="srv_btn"
+        <img src="service4.png" alt="طباعة التيشرتات والأكواب" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_4">طباعة التيشرتات والأكواب</h3>
+        <a href="catalog-materials.html" class="btn-primary" data-i18n="srv_btn"
           style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
       </div>
       <div class="card fade-in-up" style="animation-delay: 0.5s">
-        <img src="service6.png" alt="ألبومات الصور" class="card-icon-img">
-        <h3 class="card-title" data-i18n="srv_6">ألبومات الصور</h3>
-        <a href="catalog-albums.html" class="btn-primary" data-i18n="srv_btn"
+        <img src="service5.jpg" alt="دروع شكر وتقدير" class="card-icon-img">
+        <h3 class="card-title" data-i18n="srv_5">دروع شكر وتقدير</h3>
+        <a href="catalog-gifts.html" class="btn-primary" data-i18n="srv_btn"
           style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
       </div>
-      <div class="card fade-in-up" style="animation-delay: 0.6s">
-        <img src="service7.png" alt="القص والحفر CNC" class="card-icon-img">
+      <div class="card fade-in-up" style="animation-delay: 0.7s">
+        <img src="service7.jpg" alt="القص والحفر CNC" class="card-icon-img">
         <h3 class="card-title" data-i18n="srv_7">القص والحفر CNC</h3>
         <a href="catalog-cnc.html" class="btn-primary" data-i18n="srv_btn"
           style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
       </div>
-      <div class="card fade-in-up" style="animation-delay: 0.7s">
-        <img src="service8.png" alt="الأختام" class="card-icon-img">
+      <div class="card fade-in-up" style="animation-delay: 0.8s">
+        <img src="service8.jpg" alt="الأختام" class="card-icon-img">
         <h3 class="card-title" data-i18n="srv_8">الأختام</h3>
         <a href="catalog-stamps.html" class="btn-primary" data-i18n="srv_btn"
           style="margin-top:15px; display:inline-block; font-size:14px; padding:8px 16px;">اكتشف الكاتلوج</a>
@@ -141,9 +259,9 @@
   </section>
 
   <!-- CTA Banner -->
-  <section class="cta-banner fade-in-up">
-    <h2 data-i18n="banner_cta_title">كل حملتك من مكان واحد</h2>
-    <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="banner_cta_btn">ابدأ الآن</a>
+    <section class="cta-banner fade-in-up" style="margin-top: 40px;">
+    <h2 data-i18n="catalog_interest">مهتم بهذه الخدمة؟</h2>
+    <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="nav_contact" style="background-color: var(--bg-primary); color: var(--text-primary);">تواصل معنا</a>
   </section>
 
   <!-- Footer -->

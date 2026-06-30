@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    .catalog-hero {
-      padding: 150px 5% 50px;
-      background: var(--bg-secondary);
+        .catalog-hero {
+      padding: 150px 5% 70px;
+      background: linear-gradient(rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 0.75)), url('service1.webp') no-repeat center center;
+      background-size: cover;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
@@ -36,7 +37,7 @@
       <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
     </ul>
     <div style="display:flex; gap:15px; align-items:center;">
-      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="lang-toggle" id="langToggle">HE</button>
       <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
@@ -58,25 +59,179 @@
       <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.3s;"><h4>لافتات مضيئة (LED)</h4></div>
       <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.4s;"><h4>بنرات و Roll-Up</h4></div>
       <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.5s;"><h4>فوم بورد</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.6s;"><h4>جلاتين (Backlit)</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.7s;"><h4>طباعة سيارات (Vehicle Wrap)</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.6s;"><h4>طباعة سيارات (Vehicle Wrap)</h4></div>
     </div>
   </section>
 
+  <!-- Filter Tabs -->
+  <div class="filter-container fade-in-up">
+    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+    <button class="filter-btn" data-filter="flex" data-i18n="filter_flex">لافتات Flex</button>
+    <button class="filter-btn" data-filter="pvc" data-i18n="filter_pvc">لافتات PVC</button>
+    <button class="filter-btn" data-filter="vinyl" data-i18n="filter_vinyl">لاصق Vinyl</button>
+    <button class="filter-btn" data-filter="led" data-i18n="filter_led">مضيئة LED</button>
+    <button class="filter-btn" data-filter="rollup" data-i18n="filter_rollup">بنرات و Roll-Up</button>
+    <button class="filter-btn" data-filter="foamboard" data-i18n="filter_foamboard">فوم بورد</button>
+    <button class="filter-btn" data-filter="vehicle" data-i18n="filter_vehicle">طباعة سيارات</button>
+  </div>
+
   <!-- Gallery Section -->
-  <section class="section-padding">
+  <section class="section-padding" style="padding-top: 10px;">
     <div class="gallery-grid">
-      <div class="gallery-item fade-in-up"><img src="CATALOG/اللافتات والإعلانات.png" alt="اللافتات والإعلانات"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x800/1a1a1a/ff6b00?text=RollUp" alt="Banner"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Vehicle+Wrap" alt="Banner"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=LED+Banner" alt="Banner"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x600/1a1a1a/ff6b00?text=Foam+Board" alt="Banner"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Window+Vinyl" alt="Banner"></div>
+      <!-- Flex Banners -->
+      <div class="gallery-item fade-in-up" data-category="flex">
+        <img src="CATALOG/banners/flex/FLEX.png" alt="لافتات مط Flex">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="flex">
+        <img src="CATALOG/banners/flex/FLEX2.png%20.jpeg" alt="لافتات مط Flex">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+
+      <!-- PVC Banners -->
+      <div class="gallery-item fade-in-up" data-category="pvc">
+        <img src="CATALOG/banners/pvc/PCV.jpg" alt="لافتات جلد PVC">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="pvc">
+        <img src="CATALOG/banners/pvc/PCV2.jpeg" alt="لافتات جلد PVC">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="pvc">
+        <img src="CATALOG/banners/pvc/PCV3.jpeg" alt="لافتات جلد PVC">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+
+      <!-- Vinyl Banners -->
+      <div class="gallery-item fade-in-up" data-category="vinyl">
+        <img src="CATALOG/banners/vinyl/vinyl1.jpeg" alt="لافتات لاصقة Vinyl">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vinyl">
+        <img src="CATALOG/banners/vinyl/vinyl2.jpeg" alt="لافتات لاصقة Vinyl">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vinyl">
+        <img src="CATALOG/banners/vinyl/vinyl3.jpeg" alt="لافتات لاصقة Vinyl">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vinyl">
+        <img src="CATALOG/banners/vinyl/vinyl3.png" alt="لافتات لاصقة Vinyl">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vinyl">
+        <img src="CATALOG/banners/vinyl/vinyl4.png" alt="لافتات لاصقة Vinyl">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vinyl">
+        <img src="CATALOG/banners/vinyl/vinyl6.png" alt="لافتات لاصقة Vinyl">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+
+      <!-- LED Banners -->
+      <div class="gallery-item fade-in-up" data-category="led">
+        <img src="CATALOG/banners/led/led1.png" alt="لافتات مضيئة LED">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="led">
+        <img src="CATALOG/banners/led/LED2.jpeg" alt="لافتات مضيئة LED">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="led">
+        <img src="CATALOG/banners/led/LED3.png" alt="لافتات مضيئة LED">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="led">
+        <img src="CATALOG/banners/led/LED4.avif" alt="لافتات مضيئة LED">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="led">
+        <img src="CATALOG/banners/led/led1.avif" alt="لافتات مضيئة LED">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+
+      <!-- Roll-up Banners -->
+      <div class="gallery-item fade-in-up" data-category="rollup">
+        <img src="CATALOG/banners/rollup/rollup1.jpeg" alt="بنرات و Roll-Up">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="rollup">
+        <img src="CATALOG/banners/rollup/rollup2.jpeg" alt="بنرات و Roll-Up">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="rollup">
+        <img src="CATALOG/banners/rollup/rollup3.jpeg" alt="بنرات و Roll-Up">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="rollup">
+        <img src="CATALOG/banners/rollup/rollup4.jpeg" alt="بنرات و Roll-Up">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="rollup">
+        <img src="CATALOG/banners/rollup/rollup5.png" alt="بنرات و Roll-Up">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+
+      <!-- Foam Board -->
+      <div class="gallery-item fade-in-up" data-category="foamboard">
+        <img src="CATALOG/banners/foamboard/foamboard1.jpg" alt="فوم بورد">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="foamboard">
+        <img src="CATALOG/banners/foamboard/foamboard2.jpeg" alt="فوم بورد">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="foamboard">
+        <img src="CATALOG/banners/foamboard/foamboard3.jpeg" alt="فوم بورد">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="foamboard">
+        <img src="CATALOG/banners/foamboard/foamboard4.jpeg" alt="فوم بورد">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="foamboard">
+        <img src="CATALOG/banners/foamboard/foamboard5.jpeg" alt="فوم بورد">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="foamboard">
+        <img src="CATALOG/banners/foamboard/foamboard6.jpeg" alt="فوم بورد">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="foamboard">
+        <img src="CATALOG/banners/foamboard/foamboard7.jpg" alt="فوم بورد">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="foamboard">
+        <img src="CATALOG/banners/foamboard/foamboard8.jpg" alt="فوم بورد">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+
+      <!-- Vehicle wrapping (طباعة سيارات) -->
+      <div class="gallery-item fade-in-up" data-category="vehicle">
+        <img src="CATALOG/banners/vehicle/vehicle1.jpeg" alt="طباعة سيارات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vehicle">
+        <img src="CATALOG/banners/vehicle/vehicle2.jpeg" alt="طباعة سيارات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vehicle">
+        <img src="CATALOG/banners/vehicle/vehicle3.jpg" alt="طباعة سيارات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vehicle">
+        <img src="CATALOG/banners/vehicle/vehicle4.jpeg" alt="طباعة سيارات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="vehicle">
+        <img src="CATALOG/banners/vehicle/vehicle6.jpeg" alt="طباعة سيارات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-banner fade-in-up" style="margin-top: 40px;">
+    <section class="cta-banner fade-in-up" style="margin-top: 40px;">
     <h2 data-i18n="catalog_interest">مهتم بهذه الخدمة؟</h2>
     <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="nav_contact" style="background-color: var(--bg-primary); color: var(--text-primary);">تواصل معنا</a>
   </section>

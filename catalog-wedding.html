@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>كروت العرس | مطبعة الصخرة الحديثة</title>
+  <title>مستلزمات الأعراس والمناسبات | مطبعة الصخرة الحديثة</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .catalog-hero {
-      padding: 150px 5% 50px;
-      background: var(--bg-secondary);
+      padding: 150px 5% 70px;
+      background: linear-gradient(rgba(12, 12, 12, 0.72), rgba(12, 12, 12, 0.72)), url('service_wedding.png') no-repeat center center;
+      background-size: cover;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
@@ -26,6 +27,7 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar">
     <a href="index.html" class="logo"><img src="logo.png" alt="Sakhra Modern Press" style="height: 50px;"></a>
     <ul class="nav-links" id="navLinks">
@@ -35,46 +37,123 @@
       <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
     </ul>
     <div style="display:flex; gap:15px; align-items:center;">
-      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="lang-toggle" id="langToggle">HE</button>
       <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
 
+  <!-- Hero Catalog -->
   <header class="catalog-hero fade-in-up">
-    <h1 style="font-size: 3rem; color: #fff;" data-i18n="srv_3">كروت العرس</h1>
+    <h1 style="font-size: 3rem; color: #fff;" data-i18n="srv_3">مستلزمات الأعراس والمناسبات</h1>
     <div class="breadcrumb">
-      <a href="index.html" data-i18n="nav_home">الرئيسية</a> > <a href="services.html" data-i18n="nav_services">خدماتنا</a> > <span data-i18n="srv_3">كروت العرس</span>
+      <a href="index.html" data-i18n="nav_home">الرئيسية</a> > <a href="services.html" data-i18n="nav_services">خدماتنا</a> > <span data-i18n="srv_3">مستلزمات الأعراس والمناسبات</span>
     </div>
   </header>
 
+  <!-- Types of Services Cards -->
   <section class="section-padding" style="padding-bottom: 20px;">
     <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-      <div class="card fade-in-up" style="padding: 15px;"><h4>كروت دعوة عرس</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.1s;"><h4>كروت شكر</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.2s;"><h4>برامج الحفل</h4></div>
-      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.3s;"><h4>مستلزمات أعراس</h4></div>
+      <div class="card fade-in-up" style="padding: 15px;"><h4>اكسسوارات ومستلزمات الأعراس</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.1s;"><h4>لوحات وستاندات الاستقبال</h4></div>
+      <div class="card fade-in-up" style="padding: 15px; animation-delay: 0.2s;"><h4>لافتات ومطبوعات الممرات والصالات</h4></div>
     </div>
   </section>
 
-  <section class="section-padding">
+  <!-- Filter Tabs -->
+  <div class="filter-container fade-in-up">
+    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+    <button class="filter-btn" data-filter="supplies" data-i18n="filter_supplies">مستلزمات</button>
+    <button class="filter-btn" data-filter="welcome" data-i18n="filter_welcome">لوحات استقبال</button>
+    <button class="filter-btn" data-filter="hall_aisle" data-i18n="filter_hall_aisle">الممرات والصالات</button>
+  </div>
+
+    <!-- Gallery Section -->
+  <section class="section-padding" style="padding-top: 10px;">
     <div class="gallery-grid">
-      <div class="gallery-item fade-in-up"><img src="CATALOG/كروت العرس.jpg" alt="كروت عرس"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Thank+You+Card" alt="Wedding"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Event+Program" alt="Wedding"></div>
-      <div class="gallery-item fade-in-up"><img src="https://via.placeholder.com/600x400/1a1a1a/ff6b00?text=Accessories" alt="Wedding"></div>
+      <div class="gallery-item fade-in-up" data-category="hall_aisle">
+        <img src="CATALOG/Wedding%20Supplies/Hall%20and%20Aisle/Hall%20and%20Aisle1.jpg" alt="مطبوعات الممرات والصالات">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies1.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies1-.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies10.png" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies2.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies3.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies4.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies5.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies6.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies7.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies8.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="supplies">
+        <img src="CATALOG/Wedding%20Supplies/supplies/supplies9.jpeg" alt="مستلزمات أعراس">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="welcome">
+        <img src="CATALOG/Wedding%20Supplies/Welcome%20Signs/Welcome%20Signs%20(1).jpg" alt="لوحة استقبال">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="welcome">
+        <img src="CATALOG/Wedding%20Supplies/Welcome%20Signs/Welcome%20Signs%20(2).jpg" alt="لوحة استقبال">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="welcome">
+        <img src="CATALOG/Wedding%20Supplies/Welcome%20Signs/Welcome%20Signs%20(2).png" alt="لوحة استقبال">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="welcome">
+        <img src="CATALOG/Wedding%20Supplies/Welcome%20Signs/Welcome%20Signs%20(3).png" alt="لوحة استقبال">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="gallery-item fade-in-up" data-category="welcome">
+        <img src="CATALOG/Wedding%20Supplies/Welcome%20Signs/Welcome%20Signs%20(4).png" alt="لوحة استقبال">
+        <div class="gallery-icon"><i class="fas fa-search"></i></div>
+      </div>
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="cta-banner fade-in-up" style="margin-top: 40px;">
     <h2 data-i18n="catalog_interest">مهتم بهذه الخدمة؟</h2>
     <a href="https://wa.me/[WHATSAPP_NUMBER]" class="btn-primary" data-i18n="nav_contact" style="background-color: var(--bg-primary); color: var(--text-primary);">تواصل معنا</a>
   </section>
 
+  <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightbox-close">&times;</span>
     <img src="" alt="View" id="lightbox-img">
   </div>
 
+  <!-- Footer -->
   <footer>
     <img src="logo.png" alt="Sakhra Modern Press" style="height: 60px; margin-bottom: 5px;">
     <p data-i18n="footer_desc" style="color: var(--text-secondary);">36 عاماً في خدمة السوق | Since 1989</p>
@@ -94,4 +173,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
