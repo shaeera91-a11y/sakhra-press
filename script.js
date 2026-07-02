@@ -1,4 +1,4 @@
-const content = {
+﻿const content = {
   ar: {
     nav_home: "الرئيسية",
     nav_about: "من نحن",
@@ -87,8 +87,8 @@ const content = {
 
     // Contact
     contact_title: "تواصل معنا",
-    contact_address: "الموقع: [عنوان المطبعة]",
-    contact_hours: "ساعات العمل: السبت - الخميس / 8 صباحاً - 6 مساءً"
+    contact_address: "الدهيشة / طلعة طابون زمان، خلف سوبر ماركت عبيد الله",
+    contact_hours: "السبت - الخميس / 8 صباحاً - 12 مساءً"
   },
   he: {
     nav_home: "דף הבית",
@@ -173,8 +173,8 @@ const content = {
 
     // Contact
     contact_title: "צור קשר",
-    contact_address: "מיקום: [כתובת בית הדפוס]",
-    contact_hours: "שעות פעילות: שבת - חמישי / 8 בבוקר - 6 בערב"
+    contact_address: "אל-דהישה / עלייה לתנורים, מאחורי סופרמרקט עביד-אלה",
+    contact_hours: "السبت - الخميس / 8 صباحاً - 12 مساءً"
   }
 };
 
